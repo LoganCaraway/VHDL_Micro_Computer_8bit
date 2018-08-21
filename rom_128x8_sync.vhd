@@ -26,6 +26,7 @@ architecture rom_128x8_sync_arch of rom_128x8_sync is
 	constant INCB    : std_logic_vector(7 downto 0) := x"47"; --B <= B + 1
 	constant DECA    : std_logic_vector(7 downto 0) := x"48"; --A <= A - 1
 	constant DECB    : std_logic_vector(7 downto 0) := x"49"; --B <= B - 1
+
 	constant BRA     : std_logic_vector(7 downto 0) := x"20"; --Branch Always
 	constant BMI     : std_logic_vector(7 downto 0) := x"21"; --Branch to Address provided if N=1
 	constant BEQ     : std_logic_vector(7 downto 0) := x"23"; --Branch to Address provided if Z=1
